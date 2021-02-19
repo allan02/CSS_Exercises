@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 { color: red; }
+      p  { background: aqua; }
+      /* 모든 요소를 선택 */
+      /*  * { color: red; } */
+
+      /* id 어트리뷰트 값이 p1인 요소를 선택 */
+      #p1 { color: red; }
+      .container{color : blue; }
+
+      /* class 어트리뷰트 값이 text-center인 모든 요소를 선택 */
+     .text-center { text-align: center; }
+     /* class 어트리뷰트 값이 text-large인 모든 요소를 선택 */
+     .text-large  { font-size: 200%; }
+     /* class 어트리뷰트 값이 text-red인 모든 요소를 선택 */
+     .text-red    { color: red; }
+     /* class 어트리뷰트 값이 text-blue인 모든 요소를 선택 */
+     .text-blue   { color: blue; }
+
+     /* a 요소 중에 href 어트리뷰트를 갖는 모든 요소 */
+     a[href] { color: red; }
+
+     div > p { color: red; }
+
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Hello World</h1>
+
+    <p>This is a web page.</p>
+    <p id="p1">paragraph 1</p>
+    <p id="p2">paragraph 2</p>
+
+    <div class="container">
+      <p>paragraph 3</p>
+    </div>
+
+    <p class="text-center">Center</p>
+    <p class="text-large text-red">Large Red</p>
+    <p class="text-center text-large text-blue">Center Large Blue</p>
+
+
+    <a href="http://www.poiemaweb.com">poiemaweb.com</a><br>
+    <a href="http://www.google.com" target="_blank">google.com</a><br>
+    <a href="http://www.naver.com" target="_top">naver.com</a>
+  </body>
+</html>
